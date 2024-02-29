@@ -1,9 +1,15 @@
 <script lang="ts">
 	import Navbar from "$lib/Navbar.svelte";
     import Footer from "$lib/Footer.svelte";
+    import ProgressBar from "$lib/ProgressBar.svelte";
     import "../app.css";
 </script>
 
-<Navbar/>
-<slot/>
-<Footer/>
+<div class="flex flex-col min-h-screen bg-background text-text font-nerd">
+    <Navbar/>
+    <ProgressBar/>
+    <div id="content" class="flex-grow h-0 overflow-y-auto overflow-x-hidden">
+        <slot/>
+    </div>
+    <Footer/>
+</div>

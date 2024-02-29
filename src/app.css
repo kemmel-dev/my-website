@@ -1,3 +1,22 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Emoji&display=swap");
+
+.font-nerd {
+    font-family: "JetBrains Mono", monospace;
+  }
+  
+  .font-noto-emoji {
+    font-family: "Noto Emoji", sans-serif;
+  }
+  
+
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
