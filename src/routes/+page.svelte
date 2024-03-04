@@ -1,2 +1,7 @@
+<script>
+    import MarkdownRenderer from "$lib/MarkdownRenderer.svelte";
+</script>
 
-Main page
+<div class="!font-sans">
+    <MarkdownRenderer path={'page.md'}  />
+</div>
