@@ -1,9 +1,12 @@
 <script>
     import Logo from '$lib/Logo.svelte';
     import Icon from '@iconify/svelte';
+    import { base } from '$app/paths';
+
+    console.log(base);
 
     let routes = [
-        { name: 'Home', href: '/' },
+        { name: 'Home', href:  '/' },
         { name: 'Blog', href: '/' },
         { name: 'Projects', href: '/projects' },
         { name: 'About', href: '/about' },
@@ -19,7 +22,7 @@
         <div class="flex mt-8 duration-500 divide-x-2 lg:mt-0 lg:justify-center">
             {#each routes as route}
                 <div>
-                    <a href="{route.href}" class="p-2 hover:text-accent">{route.name}</a>
+                    <a href="{base}{route.href}" class="p-2 hover:text-accent">{route.name}</a>
                 </div>
             {/each}
         </div>
