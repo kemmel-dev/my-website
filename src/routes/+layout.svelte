@@ -5,11 +5,11 @@
     import "../app.css";
 </script>
 
-<div class="flex flex-col min-h-screen bg-background text-text font-nerd">
+<main class="flex flex-col min-h-screen bg-background text-text font-nerd">
     <Navbar/>
     <ProgressBar/>
-    <div id="content" class="flex-grow h-0 overflow-y-auto overflow-x-hidden">
+    <div id="content" class="flex-grow h-0 overflow-x-hidden overflow-y-auto">
         <slot/>
     </div>
     <Footer/>
-</div>
+</main>
